@@ -1,4 +1,4 @@
-// here we declare variable for hour,min,sec,miliSecond
+// here we declare variable for hour,min,sec,milliSecond
 let hr = 0,min = 0, sec = 0, msec = 0;
 
 // Flag variable is use for time counting when "true" and stop when "false"
