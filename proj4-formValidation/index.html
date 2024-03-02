@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- costom css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div id="container">
+        <h3>Login form developed by <b>MUHAMMAD SAHIL</b></h3>
+        <form onsubmit="return formValidation()" >
+            <h2>Login Form</h2>
+            <input type="text" id="username" placeholder="Type your username ">
+            <p id="user-error"></p>
+            <input type="password" id="password" placeholder="Type your password ">
+            <p id="pass-error"></p>
+            <input type="submit" >
+        </form>
+    </div>
+    <!-- costom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
