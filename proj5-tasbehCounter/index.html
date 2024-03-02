@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasbeeh Counter</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #3498db;
+    }
+    #container{
+        text-align: center;
+        background-color: white;
+        padding: 22px 11px;;
+    }
+    #count{
+        font-size: 120px;
+        /* border: 1px solid; */
+        padding: 16px 16px;
+    }
+    button{
+        font-size: 20px;
+        font-weight: bolder;
+        padding: 9px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 48px;
+        color: white;
+    }
+    #add{
+        background-color: green;
+    }
+    #reset{
+        background-color: red;
+    }
+</style>
+<body>
+    <div id="container">
+        <h2 id="count">00000</h2>
+        <div>
+            <button id="add">Add</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+
+    <script>
+        let count = 0;
+        document.querySelector("#add").addEventListener("click", function(){
+            count += 1;
+            if (count < 10) {
+                document.querySelector("#count").innerHTML = `0000${count}`
+            }else if(count < 100){
+                document.querySelector("#count").innerHTML = `000${count}`
+            }else if(count < 1000){
+                document.querySelector("#count").innerHTML = `00${count}`
+            }else if(count < 10000){
+                document.querySelector("#count").innerHTML = `0${count}`
+            }else{
+                document.querySelector("#count").innerHTML = count
+            }
+            
+        })
+        document.querySelector("#reset").addEventListener("click", function(){
+            count = 0;
+            document.querySelector("#count").innerHTML = "00000"
+        })
+    </script>
+</body>
+</html>
