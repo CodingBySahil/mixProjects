@@ -14,3 +14,6 @@
 
 ### Poject no 5 : Tasbeh counter or click counter 
 ###### link : https://sahilproj5.surge.sh
+
+### Poject no 6 : Analog and digatal watch 
+###### link : https://sahilproj6.surge.sh
