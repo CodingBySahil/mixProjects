@@ -21,3 +21,6 @@
 ### Poject no 6 : Analog and digatal watch 
 ###### link : https://sahilproj6.surge.sh
 
+### Poject Facebook alternative site : using just JS || code is in smitClassPractice/5 feb 2024 (repo) 
+###### link : https://sahilfacebookalternative.surge.sh
+
