@@ -115,27 +115,10 @@ body {
         left: -10vw;
     }
 }
-
-@font-face {
-    font-family: gameFont1;
-    src: url(font/CorporationGames-BgGB.ttf);
-}
-
 @font-face {
     font-family: gameFont2;
     src: url(font/CorporationGamesStraight-8KeM.ttf);
 }
-
-@font-face {
-    font-family: gameFont3;
-    src: url(font/AerologicaRegular-K7day.ttf);
-}
-
-@font-face {
-    font-family: gameFont4;
-    src: url(font/WarEliteDemo-vmopy.ttf);
-}
-
 @font-face {
     font-family: gameFont5;
     src: url(font/WarEliteGrungeDemo-lg2J5.ttf);
