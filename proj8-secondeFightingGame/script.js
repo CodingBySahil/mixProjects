@@ -56,9 +56,9 @@ class sprite {
     } else this.velocity.y += gravity;
   }
   attack() {
-    player.isAttacking = true;
+    this.isAttacking = true;
     setTimeout(() => {
-      player.isAttacking = false;
+      this.isAttacking = false;
     }, 100);
   }
 }
@@ -141,9 +141,9 @@ function animate() {
     player.isAttacking
   ) {
     player.isAttacking = false;
-    enemy.health -= 20
-    document.querySelector('#enemyHealth').style.width = `${enemy.health}%`;
-    console.log('plaeyr')
+    enemy.health -= 20;
+    document.querySelector("#enemyHealth").style.width = `${enemy.health}%`;
+    console.log("plaeyr");
   }
   if (
     rectangularCollision({
@@ -151,13 +151,14 @@ function animate() {
       rectange2: player,
     }) &&
     enemy.isAttacking
-    ) {
-      enemy.isAttacking = false;
-    }
+  ) {
+    enemy.isAttacking = false;
+    player.health -= 20;
+    document.querySelector("#playerHealth").style.width = `${player.health}%`;
   }
-  animate();
-  
-  
+}
+animate();
+
 window.addEventListener("keydown", (event) => {
   // player controling
   switch (event.key) {
@@ -193,9 +194,7 @@ window.addEventListener("keydown", (event) => {
       enemy.velocity.y = -20;
       break;
     case "ArrowDown":
-      enemy.isAttacking = true;
-      player.health -= 20
-    document.querySelector('#playerHealth').style.width = `${player.health}%`;
+      enemy.attack();
       break;
     default:
       break;
