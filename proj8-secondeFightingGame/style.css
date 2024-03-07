@@ -12,7 +12,8 @@ body{
     height: 100vh;
 } */
  .main-container {
-    position: relative; display: inline-block
+     position: relative;
+     display: inline-block
  }
 
  .top-container {
